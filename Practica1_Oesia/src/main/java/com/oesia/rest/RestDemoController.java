@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.oesia.model.Persona;
+import com.oesia.model.Fecha;
 import com.oesia.repo.IPersonaRepo;
 
 @RestController
@@ -27,17 +27,17 @@ public class RestDemoController {
 	//Put -> Actualizacion total de datos
 	//Delete -> Eliminacion de datos
 	@GetMapping
-	public List<Persona> listar(){
+	public List<Fecha> listar(){
 		return repo.findAll();
 	}
 	
 	@PostMapping
-	public void insertar(@RequestBody Persona per){
+	public void insertar(@RequestBody Fecha per){
 		repo.save(per);
 	}
 	
 	@PutMapping
-	public void modificar(@RequestBody Persona per){
+	public void modificar(@RequestBody Fecha per){
 		repo.save(per);
 	}
 	
