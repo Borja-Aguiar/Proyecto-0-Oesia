@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.oesia.model.Fecha;
-import com.oesia.repo.IPersonaRepo;
+import com.oesia.repo.IFechaRepo;
 
 @RestController
-@RequestMapping("/personas")
+@RequestMapping("/fechas")
 public class RestDemoController {
 	
 	@Autowired
-	private IPersonaRepo repo;
+	private IFechaRepo repo;
 	
 	//Get -> Obtencion de datos
 	//Post -> Insercion de datos

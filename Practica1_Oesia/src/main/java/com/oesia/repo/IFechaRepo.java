@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.oesia.model.Fecha;
 
-public interface IPersonaRepo extends JpaRepository<Fecha, Integer> {
+public interface IFechaRepo extends JpaRepository<Fecha, Integer> {
 
 	
 }

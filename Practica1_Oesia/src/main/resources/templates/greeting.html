@@ -8,10 +8,11 @@
 	<p th:text="'Hola, ' + ${name} + '!'" />
 	
 	<table>
-		<th:block th:each="per : ${personas}">
+		<th:block th:each="f : ${fecha}">
 			<tr>
-				<td th:text="${per.idPersona}" />
-				<td th:text="${per.nombre}" />
+				<td th:text="${f.id}" />
+				<td th:text="${f.codigo}" />
+				<td th:text="${f.fecha}" />
 			</tr>
 	</table>
 </body>

@@ -5,7 +5,9 @@ import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import java.sql.Date;
+import java.util.Date;
+
+//import java.sql.Date;
 
 import javax.persistence.Column;
 
@@ -20,7 +22,7 @@ public class Fecha {
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
 	@Column(name="fecha")
-	private Date fecha;
+	private String fecha;
 	
 	public int getId() {
 		return id;
@@ -35,10 +37,10 @@ public class Fecha {
 		this.codigo = codigo;
 	}
 	
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 }
