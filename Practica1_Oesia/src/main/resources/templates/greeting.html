@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Aprendiendo SpringBoot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<p th:text="'Hola, ' + ${name} + '!'" />
+	
+	<table>
+		<th:block th:each="per : ${personas}">
+			<tr>
+				<td th:text="${per.idPersona}" />
+				<td th:text="${per.nombre}" />
+			</tr>
+	</table>
+</body>
+</html>
